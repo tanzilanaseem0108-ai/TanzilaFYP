@@ -1,4 +1,4 @@
-import 'package:bolo/register_screen.dart';
+import 'package:bolo/screens/register_screen.dart';
 import 'package:flutter/material.dart';
 import '../utils/app_state.dart';
 

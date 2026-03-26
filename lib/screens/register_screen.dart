@@ -1,5 +1,7 @@
+import 'parent_dashboard.dart';
 import 'package:flutter/material.dart';
-import '../utils/app_state.dart';
+
+import '../../utils/app_state.dart';
 
 class RegisterScreen extends StatefulWidget {
   @override
@@ -55,7 +57,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
             ElevatedButton(
               onPressed: () {
-                // Yahan hum Parents ke liye 'Add Child' wali logic shuru karenge
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ParentDashboard())
+                );
               },
               child: Text(isUrdu ? "رجسٹر کریں" : "Register"),
             ),
